@@ -57,6 +57,9 @@ Ensure your configuration file contains the following lines:
 # reads username and password from the first two lines of login.settings
 auth-user-pass login.settings
 
+# needed to permit the script below to run in openvpn 2.1
+script-security 2
+
 # runs when the connection is up
 up /etc/openvpn/up.sh
 ```
